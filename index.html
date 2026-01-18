@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foncy Cootauco - Low-Code/No-Code Solutions Architect">
+    <title>Foncy Cootauco | Low-Code Solutions Architect</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <!-- Profile -->
+                <div class="profile">
+                    <div class="profile-image-wrapper">
+                        <img src="assets/img/photo.jpg" alt="Foncy Cootauco" class="profile-image">
+                        <div class="status-indicator"></div>
+                    </div>
+                    <h1 class="profile-name">Foncy Cootauco</h1>
+                    <p class="profile-title">Low-Code Solutions Architect</p>
+                </div>
+
+                <!-- Contact -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-label">Contact</h3>
+                    <div class="contact-list">
+                        <a href="mailto:adcootauco@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>adcootauco@gmail.com</span>
+                        </a>
+                        <a href="tel:+639682271757" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(+63) 968-227-1757</span>
+                        </a>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Philippines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-label">Connect</h3>
+                    <div class="social-links" id="social-links"></div>
+                </div>
+
+                <!-- Primary Stack -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-label">Primary Stack</h3>
+                    <div class="stack-badges" id="primary-stack"></div>
+                </div>
+
+                <!-- Languages -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-label">Languages</h3>
+                    <div class="languages-list" id="languages-list"></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <header class="hero">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h2 class="hero-headline" id="hero-headline"></h2>
+                <p class="hero-subheadline" id="hero-subheadline"></p>
+            </header>
+
+            <!-- Metrics Bar -->
+            <section class="metrics-bar">
+                <div class="metric">
+                    <span class="metric-value">10x</span>
+                    <span class="metric-label">Faster Delivery</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">7+</span>
+                    <span class="metric-label">Years Experience</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">12+</span>
+                    <span class="metric-label">Production Apps</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">99.9%</span>
+                    <span class="metric-label">Accuracy Rate</span>
+                </div>
+            </section>
+
+            <!-- Platform Expertise -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Platform Expertise</h2>
+                    <p class="section-subtitle">Building production applications by combining low-code speed with custom flexibility</p>
+                </div>
+                <div class="platform-grid" id="platform-grid"></div>
+            </section>
+
+            <!-- Featured Projects -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Work</h2>
+                    <p class="section-subtitle">Recent low-code/no-code projects with measurable impact</p>
+                </div>
+                <div class="featured-projects" id="featured-projects"></div>
+            </section>
+
+            <!-- Experience -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                </div>
+                <div class="experience-list" id="experience-list"></div>
+            </section>
+
+            <!-- All Projects -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">All Projects</h2>
+                    <div class="filter-tabs" id="filter-tabs">
+                        <button class="filter-tab active" data-filter="all">All <span class="filter-count" id="count-all"></span></button>
+                        <button class="filter-tab" data-filter="low-code">Low-Code <span class="filter-count" id="count-lowcode"></span></button>
+                        <button class="filter-tab" data-filter="traditional">Traditional <span class="filter-count" id="count-traditional"></span></button>
+                    </div>
+                </div>
+                <div class="projects-grid" id="projects-grid"></div>
+            </section>
+
+            <!-- Skills -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-categories" id="skills-categories"></div>
+            </section>
+
+            <!-- Education & Certifications -->
+            <section class="section">
+                <div class="section-header">
+                    <h2 class="section-title">Education & Certifications</h2>
+                </div>
+                <div class="education-grid" id="education-grid"></div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Built with passion · Designed to impress · Ready to deliver</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modal-content">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
