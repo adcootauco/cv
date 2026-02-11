@@ -63,6 +63,14 @@
                     <div class="stack-badges" id="primary-stack"></div>
                 </div>
 
+    <!-- Theme Toggle -->
+                <div class="sidebar-section">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+                </div>
+
                 <!-- Languages -->
                 <div class="sidebar-section">
                     <h3 class="sidebar-label">Languages</h3>
@@ -81,6 +89,14 @@
                 </div>
                 <h2 class="hero-headline" id="hero-headline"></h2>
                 <p class="hero-subheadline" id="hero-subheadline"></p>
+                
+                <!-- Contact Action -->
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" id="contact-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Get in Touch
+                    </a>
+                </div>
             </header>
 
             <!-- Metrics Bar -->
@@ -159,8 +175,15 @@
             </section>
 
             <!-- Footer -->
-            <footer class="footer">
-                <p>Built with passion · Designed to impress · Ready to deliver</p>
+            <footer class="footer" id="contact">
+                <div class="contact-cta">
+                    <h3>Ready to build something amazing?</h3>
+                    <p>Let's discuss how we can accelerate your development.</p>
+                    <a href="mailto:adcootauco@gmail.com?subject=Project Inquiry" class="btn btn-primary">
+                        Start a Conversation
+                    </a>
+                </div>
+                <p class="copyright">Built with passion · Designed to impress · Ready to deliver</p>
             </footer>
         </main>
     </div>
@@ -177,6 +200,7 @@
         </div>
     </div>
 
+    <script src="data.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
