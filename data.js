@@ -12,13 +12,13 @@ const RESUME_DATA = {
     email: "adcootauco@gmail.com",
     phone: "(+63) 968-227-1757",
     location: "Philippines",
-    
+
     // Hero Section
     hero: {
         headline: "Building production apps <span class='highlight'>10x faster</span> with low-code platforms",
         subheadline: "I architect and develop custom web applications using Xano, Weweb, and Tadabase—delivering enterprise-grade solutions without the traditional development timeline."
     },
-    
+
     // Social Media
     social: [
         { icon: "fab fa-linkedin", url: "https://www.linkedin.com/in/foncyc", label: "LinkedIn" },
@@ -27,7 +27,7 @@ const RESUME_DATA = {
         { icon: "fab fa-instagram", url: "https://www.instagram.com/foncyc/", label: "Instagram" },
         { icon: "fab fa-x-twitter", url: "https://twitter.com/foncyc/", label: "X" }
     ],
-    
+
     // Primary Stack (shown in sidebar)
     primaryStack: [
         { name: "Xano", img: "xano.png" },
@@ -35,13 +35,13 @@ const RESUME_DATA = {
         { name: "Tadabase", img: "tadabase.png" },
         { name: "REST APIs", img: "api.png" }
     ],
-    
+
     // Languages
     languages: [
         { name: "English", level: 5, type: "Professional" },
         { name: "Filipino", level: 5, type: "Native" }
     ],
-    
+
     // Platform Expertise (main content area)
     platforms: [
         { name: "Xano", description: "Backend & APIs", img: "xano.png", level: "Expert" },
@@ -51,7 +51,7 @@ const RESUME_DATA = {
         { name: "Node.js", description: "Server Runtime", img: "nodejs.png", level: "Advanced" },
         { name: "PHP", description: "Backend Dev", img: "php.png", level: "Proficient" }
     ],
-    
+
     // Featured Projects (2-3 best low-code projects)
     featuredProjects: [
         {
@@ -92,7 +92,7 @@ const RESUME_DATA = {
             ]
         }
     ],
-    
+
     // Work Experience
     experience: [
         {
@@ -127,7 +127,7 @@ const RESUME_DATA = {
             ]
         }
     ],
-    
+
     // ALL Projects (12 total: 3 low-code, 9 traditional)
     projects: [
         // LOW-CODE PROJECTS (3)
@@ -196,7 +196,7 @@ const RESUME_DATA = {
             ],
             category: "low-code"
         },
-        
+
         // TRADITIONAL PROJECTS (9)
         {
             id: "lms-middleware",
@@ -359,7 +359,7 @@ const RESUME_DATA = {
             id: "cv-portfolio",
             title: "Curriculum Vitae",
             company: "Personal Project",
-            logo: "photo.jpg",
+            logo: "photo.png",
             timeline: "MAY 2017 - AUG 2017",
             description: "A personal portfolio website showcasing professional experience, skills, and projects with a responsive, data-driven design.",
             tags: [
@@ -376,7 +376,7 @@ const RESUME_DATA = {
             category: "traditional"
         }
     ],
-    
+
     // Skills by Category
     skills: {
         expert: [
@@ -397,7 +397,7 @@ const RESUME_DATA = {
             // { name: "Linux Administration", level: 2 }
         ]
     },
-    
+
     // Education
     education: [
         {
@@ -413,7 +413,7 @@ const RESUME_DATA = {
             dates: "2002 - 2006"
         }
     ],
-    
+
     // Certifications
     certifications: [
         {
