@@ -15,8 +15,8 @@ const RESUME_DATA = {
 
     // Hero Section
     hero: {
-        headline: "Building production apps <span class='highlight'>10x faster</span> with low-code platforms",
-        subheadline: "I architect and develop custom web applications using Xano, Weweb, and Tadabase—delivering enterprise-grade solutions without the traditional development timeline."
+        headline: "Architecting <span class='highlight'>resilient</span> solutions for <span class='highlight'>critical</span> business challenges",
+        subheadline: "Moving beyond 'fast' to deliver <strong>deep, custom value</strong>. I architect production-grade applications that solve complex problems, prioritizing long-term quality over short-term speed."
     },
 
     // Social Media

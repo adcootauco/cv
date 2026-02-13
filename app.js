@@ -166,7 +166,7 @@ function renderLanguages(languages) {
 // Render Hero
 function renderHero(hero) {
     document.getElementById('hero-headline').innerHTML = hero.headline;
-    document.getElementById('hero-subheadline').textContent = hero.subheadline;
+    document.getElementById('hero-subheadline').innerHTML = hero.subheadline;
 }
 
 // Render Platform Expertise
