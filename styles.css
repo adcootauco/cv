@@ -1473,7 +1473,8 @@ body.modal-open {
     body {
         background: white !important;
         color: black !important;
-        font-size: 11pt; /* Better for print */
+        font-size: 11pt;
+        /* Better for print */
     }
 
     .layout {
@@ -1494,16 +1495,16 @@ body.modal-open {
         padding: 1rem 0 !important;
     }
 
-    .profile-name { 
-        color: black !important; 
+    .profile-name {
+        color: black !important;
     }
 
     /* Hide interactive & non-essential elements for print */
-    .theme-toggle, 
-    .contact-cta, 
-    .project-click-hint, 
-    .social-links, 
-    .status-indicator, 
+    .theme-toggle,
+    .contact-cta,
+    .project-click-hint,
+    .social-links,
+    .status-indicator,
     .hero-actions,
     .filter-tabs {
         display: none !important;
@@ -1516,9 +1517,9 @@ body.modal-open {
     }
 
     /* Prevent awkward page breaks inside cards */
-    .experience-card, 
-    .project-card, 
-    .education-card, 
+    .experience-card,
+    .project-card,
+    .education-card,
     .platform-card,
     .featured-card {
         page-break-inside: avoid;
@@ -1529,14 +1530,14 @@ body.modal-open {
     }
 
     /* Adjust grids for standard A4/Letter width */
-    .projects-grid, 
-    .metrics-bar, 
-    .platform-grid, 
+    .projects-grid,
+    .metrics-bar,
+    .platform-grid,
     .education-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 1rem !important;
     }
-    
+
     .skills-categories {
         grid-template-columns: repeat(3, 1fr) !important;
     }
@@ -1549,5 +1550,64 @@ body.modal-open {
     a {
         text-decoration: none !important;
         color: black !important;
+    }
+
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 80%;
+        color: var(--text-muted) !important;
+    }
+}
+
+/* ========================================
+   Global Polish & Accessibility
+   ======================================== */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Selection Styling */
+::selection {
+    background: var(--accent-primary);
+    color: #ffffff;
+}
+
+/* Base focus style for keyboard users */
+:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 2px;
+}
+
+/* Avoid outline when clicking */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }
