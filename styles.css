@@ -1454,3 +1454,100 @@ body.modal-open {
     font-size: 0.85rem;
     color: var(--text-muted);
 }
+
+/* ========================================
+   Print Optimization (PDF Export)
+   ======================================== */
+@media print {
+    :root {
+        --bg-primary: #ffffff !important;
+        --bg-secondary: #ffffff !important;
+        --bg-sidebar: #ffffff !important;
+        --text-primary: #000000 !important;
+        --text-secondary: #333333 !important;
+        --text-sidebar: #333333 !important;
+        --text-muted: #666666 !important;
+        --text-sidebar-muted: #666666 !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 11pt; /* Better for print */
+    }
+
+    .layout {
+        display: block !important;
+    }
+
+    .sidebar {
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+        background: white !important;
+        color: black !important;
+        border-bottom: 2px solid #ccc !important;
+        overflow: visible !important;
+    }
+
+    .sidebar-content {
+        padding: 1rem 0 !important;
+    }
+
+    .profile-name { 
+        color: black !important; 
+    }
+
+    /* Hide interactive & non-essential elements for print */
+    .theme-toggle, 
+    .contact-cta, 
+    .project-click-hint, 
+    .social-links, 
+    .status-indicator, 
+    .hero-actions,
+    .filter-tabs {
+        display: none !important;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+        padding: 1rem 0 !important;
+        max-width: 100% !important;
+    }
+
+    /* Prevent awkward page breaks inside cards */
+    .experience-card, 
+    .project-card, 
+    .education-card, 
+    .platform-card,
+    .featured-card {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+
+    /* Adjust grids for standard A4/Letter width */
+    .projects-grid, 
+    .metrics-bar, 
+    .platform-grid, 
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+    
+    .skills-categories {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .accomplishment::before {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+}
